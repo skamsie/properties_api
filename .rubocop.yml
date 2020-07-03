@@ -1,0 +1,97 @@
+AllCops:
+  Exclude:
+    - bin/**
+    - Gemfile
+    - config/**/*
+    - vendor/**/*
+    - db/schema.rb
+    - db/**/*.rb
+
+Lint/UriEscapeUnescape:
+  Enabled: false
+
+Layout/MultilineMethodCallBraceLayout:
+    Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/Documentation:
+  Enabled: false
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Metrics/BlockLength:
+  Enabled: false
+
+Style/NumericLiterals:
+  Enabled: false
+
+Style/PercentLiteralDelimiters:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: true
+  Max: 60
+
+Layout/LineLength:
+  Enabled: true
+  Max: 80
+
+Layout/EmptyLinesAroundBlockBody:
+  Enabled: true
+
+Bundler/OrderedGems:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
+
+Layout/HashAlignment:
+  Enabled: false
+
+Layout/EmptyLinesAroundAttributeAccessor:
+  Enabled: false
+
+Layout/SpaceAroundMethodCallOperator:
+  Enabled: false
+
+Lint/DeprecatedOpenSSLConstant:
+  Enabled: false
+
+Lint/MixedRegexpCaptureTypes:
+  Enabled: false
+
+Lint/RaiseException:
+  Enabled: false
+
+Lint/StructNewOverride:
+  Enabled: false
+
+Style/ExponentialNotation:
+  Enabled: false
+
+Style/HashEachMethods:
+  Enabled: false
+
+Style/HashTransformKeys:
+  Enabled: false
+
+Style/HashTransformValues:
+  Enabled: false
+
+Style/RedundantFetchBlock:
+  Enabled: false
+
+Style/RedundantRegexpCharacterClass:
+  Enabled: false
+
+Style/RedundantRegexpEscape:
+  Enabled: false
+
+Style/SlicingWithRange:
+  Enabled: false
