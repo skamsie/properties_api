@@ -1,18 +1,18 @@
 class ListProperties < ActiveInteraction::Base
-  @property_types = %w(apartment single_family_house)
-  @marketing_types = %w(rent sell)
+  PROPERTY_TYPES = %w(apartment single_family_house).freeze
+  MARKETING_TYPES = %w(rent sell).freeze
 
   float :lng, :lat
   string :property_type, :marketing_type
   validates :property_type,
             inclusion: {
-              in: @property_types,
-              message: "must be one of: #{@property_types.join(', ')}"
+              in: PROPERTY_TYPES,
+              message: "must be one of: #{PROPERTY_TYPES.join(', ')}"
             }
   validates :marketing_type,
             inclusion: {
-              in: @marketing_types,
-              message: "must be one of: #{@marketing_types.join(', ')}"
+              in: MARKETING_TYPES,
+              message: "must be one of: #{MARKETING_TYPES.join(', ')}"
             }
 
   def execute
